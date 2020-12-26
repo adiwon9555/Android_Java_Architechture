@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onChanged(List<Note> notes) {
 //                Toast.makeText(MainActivity.this,"Changed",Toast.LENGTH_SHORT).show();
-                noteAdaptar.setAllNotes(notes);
+                noteAdaptar.submitList(notes);
             }
         });
         new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0,
